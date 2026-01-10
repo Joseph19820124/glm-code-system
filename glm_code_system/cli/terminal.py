@@ -178,9 +178,9 @@ Patterns Learned: {metrics.get('patterns_learned', 0)}
         self.console.print("\n[bold]Learned Patterns:[/bold]")
         for i, pattern in enumerate(patterns[:10], 1):
             self.console.print(
-                f"\n{[cyan]{i}.[/cyan] [bold]{pattern['type']}[/bold] "
-                f"([yellow]{pattern['success_rate']:.0%}[/yellow] used {pattern.get('usage_count', 0)} times)"
-            )
+            f"\n[cyan]{i}.[/cyan] [bold]{pattern['type']}[/bold] "
+            f"([yellow]{pattern['success_rate']:.0%}[/yellow] used {pattern.get('usage_count', 0)} times)"
+        )
             self.console.print(f"   {pattern['description']}")
 
         if len(patterns) > 10:
