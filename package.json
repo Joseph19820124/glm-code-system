@@ -1,0 +1,50 @@
+{
+  "name": "glm-code-system",
+  "version": "1.0.0",
+  "description": "GLM-powered autonomous coding system with self-learning capabilities",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "cli": "tsx src/cli/index.ts",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "glm",
+    "ai",
+    "coding",
+    "agent",
+    "autonomous",
+    "typescript"
+  ],
+  "author": "GLM Code System Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "zod": "^3.22.4",
+    "chalk": "^4.1.2",
+    "ora": "^8.0.1",
+    "inquirer": "^9.2.12",
+    "commander": "^12.1.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "better-sqlite3": "^9.4.3",
+    "openai": "^4.26.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2",
+    "@vitest/ui": "^1.2.2"
+  }
+}
